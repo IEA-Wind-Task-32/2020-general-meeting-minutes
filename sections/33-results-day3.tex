@@ -15,115 +15,89 @@
 
 \emph{43 participants joined us to hear about the outcomes from the working groups}
 
-The groups reported their progress. Each group had 1 slide and 3 minutes to present their work. Following are notes from each group including the summary slide that they prepared. The slides have been reproduced without editing. Each group appointed a Rapporteur to present the slide.
+The groups reported their progress. Each group had 1 slide and 3 minutes to present their work. Each group appointed a Rapporteur to present the slide.
 
-\hypertarget{forecasting}{%
-\subsubsection{Forecasting}\label{forecasting}}
+Following are the notes from each group including the summary slide that they prepared. The slides have been reproduced without editing.
+
+\subsubsection{Forecasting}
 
 \emph{Rapporteur: Ines Würth}
 
-This is a topic with lots of open questions, but there's not much public
-research in this area at the moment. Task 32 remains a great place to
-share ideas. More information about the discussion in this group is
-available in the
+This is a topic with lots of open questions, but there's not much public research in this area at the moment. Task 32 remains a great place to share ideas. %More information about the discussion in this group is available in the
 \href{https://docs.google.com/document/d/1Yq2JyWJAEZVAJE9te4FJ-57OpXdxNRHWhks88l2YJcI/edit?usp=sharing}{working
 group's notes}.
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\textbf{Task 32 action} : we'll store those open questions in a public
-space and make them available for others to build on.\tabularnewline
-\midrule
-\endhead
-\bottomrule
-\end{longtable}
+\textbf{Task 32 action}: we'll store those open questions in a public space and make them available for others to build on.
 
-\hypertarget{wind-lidar-for-wind-energy-applications-in-cold-climate}{%
-\subsubsection{Wind lidar for wind energy applications in cold
-climate}\label{wind-lidar-for-wind-energy-applications-in-cold-climate}}
+\subsubsection{Wind lidar for wind energy applications in cold climate}
 
 \emph{Rapporteur: Nicolas Jolin}
 
-See \protect\hyperlink{_89scdv7d3yn6}{the presentation from Day 2} for
-more information about this working group. Studies are ongoing. Please
-get in contact with Nicolas Jolin if you are interested.
+See the presentation from Day 2 for more information about this working group. Studies are ongoing. Please get in contact with Nicolas Jolin if you are interested.
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\textbf{Task 32 action} : Task 32 will continue to support this working
-group.\tabularnewline
-\midrule
-\endhead
-\bottomrule
-\end{longtable}
+\textbf{Task 32 action}: Task 32 will continue to support this working group.
 
-\hypertarget{a-world-without-cups}{%
-\subsubsection{A world without cups}\label{a-world-without-cups}}
+\subsubsection{A world without cups}
 
 \emph{Rapporteur: Mads Sorensen, Remi Gandoin}
 
 \begin{itemize}
-\tightlist
-\item
-  These were more philosophical discussions. Important when looking into
-  the future
-\item
-  An entire industry needs to be changed!
-
-\item
-  the laser technology and the great progress it lead to in physics;
-\item
-  going beyond the "lidars don't give me TI" approach by
-  questioning/better understanding what these TI values are used for
-  (typically: IEC turbulence classes evaluation). In effect, in the IEC
-  framework, the input flow models that are used for the load
-  simulations are really "toy models" of the atmosphere (steady state
-  10min, power law shear, Kaimal neutral form spectra w/ pre-defined
-  length scales). We (I) are missing practical examples of situations
-  where cups lead to better siting/WTG choice than LiDARs.
+\item These were more philosophical discussions. But it's important to think about philsophy when looking into the future.
+\item An entire industry needs to be changed!
+\item the laser technology and the great progress it lead to in physics;
+\item going beyond the "lidars don't give me TI" approach by   questioning/better understanding what these TI values are used for (typically: IEC turbulence classes evaluation). In effect, in the IEC framework, the input flow models that are used for the load simulations are really "toy" models of the atmosphere (i.e., steady-state over 10 minutes, power law shear, and Kaimal neutral form spectra with pre-defined length scales). Despite the potential of wind lidar, we are missing practical examples of situations where LiDARs lead to better siting/WTG choice than cups.
 \end{itemize}
 
-\textbf{Task 32 action} : Task 32 will continue to explore this
-question. We may identify a work case that is not well-served by cup
-anemometers and the current approach to wind characterisation, and
-investigate how to leverage wind lidar instead.
+\textbf{Task 32 action}: Task 32 will continue to explore this question. We may identify a work case that is not well-served by cup anemometers and the current approach to wind characterisation, and investigate how to leverage wind lidar instead.
 
-\subsubsection{Colalboration on wind lidar hardware and software}
+\subsubsection{Collaboration on wind lidar hardware and software}
 
 \emph{Rapporteur: Francisco Costa}
 
-There's a lot of work going on in this area. The major challenge is to
-coordinate activities and tools, and enable them to work together.
+There's a lot of work going on in this area. The major challenge is to coordinate activities and tools, and enable them to work together (\fref{fig:day3-collaboration-hardware-software}).
 
-\includegraphics{RackMultipart20201125-4-1c19q8c_html_d59cfda985618214.png}
+\begin{figure*}[p]
+\centering
+\fbox{
+\includegraphics[width=0.85\textwidth]{figures/day3-collaboration-hardware-software.png}
+}
+\caption{Collaboration on wind lidar hardware and software}
+\label{fig:day3-collaboration-hardware-software}
+\end{figure*}
 
-\textbf{Task 32 action} : we'll update the Task 32 glossary to include a
-generic lidar design structure, and align it with the open lidar
-modules. This glossary can be used to define classes for lidars, like
-\emph{optics.telescope.aperture} which could help with defining inputs
-for simulations, etc. See
-\href{https://github.com/IEA-Wind-Task-32/wind-lidar-glossary}{\url{https://github.com/IEA-Wind-Task-32/wind-lidar-glossary}}
-for ongoing efforts.
+\textbf{Task 32 action}: we'll update the \href{https://github.com/IEA-Wind-Task-32/wind-lidar-glossary}{Task 32 Glossary} to include a generic lidar design approach that is aligned with the open lidar modular concept \cite{clifton_2019_openlidar}. This glossary can be used to define classes for lidars, like \emph{optics.telescope.aperture} which could help with defining inputs for simulations, etc. We'll also create reference designs using this structure.
 
 \subsubsection{Turbulence intensity derived from wind lidar}
 
 \emph{Rapporteur: Reesa Dexter}
 
-This has been a recurrent theme through the General Meeting
+This has been a recurrent theme through the General Meeting. There are opportunities to go beyond current approaches to just mirror conventional met masts (\fref{fig:day3-Ti-group}) A workshop bringing industry and academia together would be a good next step.
 
-\includegraphics{RackMultipart20201125-4-1c19q8c_html_7605375138aabec9.png}
+\begin{figure*}[p]
+    \centering
+    \fbox{
+    \includegraphics[width=0.85\textwidth]{figures/day3-Ti-group.png}
+    }
+    \caption{A lidar-derived turbulence data roadmap vision for Task 32 }
+    \label{fig:day3-Ti-group}
+\end{figure*}
 
-A workshop bringing industry and academia together would be a good next step.
-
-\textbf{Task 32 action} : we'll include the suggested next steps in our
-roadmap and start to plan events for 2021 and beyond.
+\textbf{Task 32 action}: we'll include the suggested next steps in our roadmap and start to plan events for 2021 and beyond. We'll also coordinate with CFARS.
 
 \subsubsection{Wind lidar in complex terrain}
 
 \emph{Rapporteur: Alexander Stoekl}
 
-\includegraphics{RackMultipart20201125-4-1c19q8c_html_c11e362697bc4a26.png}
+There continues to be a lot of interest in the potential to use wind lidar in complex terrain. This means we need tools to do it reliably and predictably, and we need to know when we hit the limits of our capabilities. There's an active working group in this area (see \sref{sec:news-complex-terrain-group}.)
 
+\begin{figure*}[p]
+    \centering
+    \fbox{
+    \includegraphics[width=0.85\textwidth]{figures/day3-complex-terrain.png}
+    }
+    \caption{Topics and take-aways from the complex terrain working session}
+    \label{fig:day3-complex-terrain}
+\end{figure*}
 
 \textbf{Task 32 action} : Task 32 will continue to support this working
 group.
@@ -132,77 +106,78 @@ group.
 
 \emph{Rapporteur: Julia Gottschall, IWES Fraunhofer}
 
-The majority of actions here are taking place through the IEC, and it is
-not feasible to have parallel activities through Task 32 as many
-stakeholders are already taking part in the IEC process. The suggestion
-is a third workshop in the second half of 2021 to align.
+The majority of actions around floating lidar are taking place through the IEC, and it is not needed at this time to have parallel activities through Task 32 as many stakeholders are already taking part in the IEC process. However, not all are involved and there is a need to make sure that the Task 32 community and IEC maintain alignment. The suggestion is therefore a third workshop in the second half of 2021 to align (\fref{fig:day3-floating-lidar}).
 
-Please contact Julia or the Operating Agents if you are interested in
-collaborating.
+\begin{figure*}[p]
+    \centering
+    \fbox{
+    \includegraphics[width=0.85\textwidth]{figures/day3-floating-lidar.png}
+    }
+    \caption{Future activities for Task 32 around floating lidar systems.}
+    \label{fig:day3-floating-lidar}
+\end{figure*}
 
 \textbf{Task 32 action}: Task 32 will organise an alignment workshop in
-the second half of 2021
+the second half of 2021.
 
 \subsubsection{Nacelle lidar in complex terrain}
 \emph{Rapporteur: Jacob Burrows}
 
+This group saw the biggest difficulty in actually defining the problem. They produced a framework to help them and others think through the problem (\fref{fig:day3-nacelle-mounted}).
+
+\begin{figure*}[p]
+    \centering
+    \fbox{
+    \includegraphics[width=0.85\textwidth]{figures/day3-nacelle-mounted.png}
+    }
+    \caption{Defining the challenge of using nacelle mounted lidar in complex terrain}
+    \label{fig:day3-nacelle-mounted}
+\end{figure*}
 
 \begin{itemize}
-\item
-  Comment from a participant: the 2.5 D is not a function of decay but a
-  function of the turbine itself. Depends on the turbine size.
-\item
-  The need is there to perform power curve verification in complex
-  terrain from industry perspective
-\item
-  There could be another workshop on this topic
-\end{itemize}
+    \item Comment from a participant: the 2.5 D is not a function of decay but a function of the turbine itself. Depends on the turbine size.
+    \item The need is there to perform power curve verification in complex terrain from industry perspective
+    \item There could be another workshop on this topic!
+    \end{itemize}
 
-
-\textbf{Task 32 action}: Task 32 will combine the outcome from this
-group with the outcomes from the group looking at power performance
-verification using measurements in the induction zone. We'll also
-combine this with previous plans to run a round-robin on this theme.
-We'll propose a path forward in 2021.
+\textbf{Task 32 action}: Task 32 will combine the outcome from this group with the outcomes from the group looking at power performance verification using measurements in the induction zone. We'll also combine this with previous plans to run a round-robin on this theme. We'll propose a path forward in 2021.
 
 \subsubsection{Power performance verification in the induction zone}
 
 \emph{Rapporteur: Sebastian Streitz}
 
-There is a need for an alternative proxy for freestream wind speed is in
-common with nacelle lidar → need for more studies, could also be topic
-for a short focused meeting
+The need for an alternative proxy for freestream wind speed is in common with nacelle lidar (\fref{fig:day3-powerperformance}). This suggests a need for more studies, and could also be topic for a short focused meeting.
 
-\textbf{Task 32 action}: Task 32 will combine the outcome from this
-group with the outcomes from the group looking at nacelle mounted lidar
-in complex terrain. We'll also combine this with previous plans to run a
-round-robin on this theme. We'll propose a path forward in
-2021.
+\begin{figure*}[p]
+    \centering
+    \fbox{
+    \includegraphics[width=0.85\textwidth]{figures/day3-powerperformance.png}
+    }
+    \caption{Opportunities and challenges with using measurements in the induction zone for power performance testing}
+    \label{fig:day3-powerperformance}
+\end{figure*}
 
-\subsubsection{Lidar assisted control}
+\textbf{Task 32 action}: Task 32 will combine the outcome from this group with the outcomes from the group looking at nacelle mounted lidar in complex terrain. We'll also combine this with previous plans to run a round-robin on this theme. We'll propose a path forward in 2021.
 
-\begin{itemize}
+\subsubsection{Lidar-assisted control}
 
-\item
-  The reference turbine that will be supplied is being worked on. A
-\end{itemize}
+Lidar-assisted control of wind turbines is increasingly becoming reality, but turbines are not yet being designed to take full advantage of the wind lidar. There are still steps that need to be taken before co-design will become practical.
 
-
-\textbf{Task 32 action} : Task 32 will...
-
+\textbf{Task 32 action}: Task 32 will:
 \begin{enumerate}
-\item
-  Continue to work on a open repository of lidar-assisted control
-  simulations
-\item
-  Address the cost of the lidar by a white paper: show that it has come
-  down, improve lidar cost modeling
-\item
-  Organize a white paper to connect turbine OEM's needs to lidar
-  manufacturers, e.g. Improve availability, maintenance friendly, more
-  adjustable
-\item
-  Collaborate more with other IEA Wind tasks (IEA Wind Task 37 & the new "wind farm flow control" Task)
+\item Continue to work on a open repository of lidar-assisted control simulations
+\item Address the cost of the lidar by a white paper: show that it has come down, improve lidar cost modeling
+\item Organize a white paper to connect turbine OEM's needs to lidar manufacturers, e.g. improved availability, maintenance friendly, more adjustable
+\item Collaborate more with other IEA Wind Tasks, for example Task 37 \& the new "wind farm flow control" Task.
 \end{enumerate}
+
+\begin{figure*}[p]
+    \centering
+    \fbox{
+    \includegraphics[width=0.85\textwidth]{figures/day3-LAC.png}
+    }
+    \caption{How Task 32 can enable adoption of lidar-assisted control of wind turbines and plants}
+    \label{fig:day3-LAC}
+\end{figure*}
 
 The meeting closed at 17:00 CEST on 22 October.

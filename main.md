@@ -304,7 +304,7 @@ Folks who leave the meeting should do this..
 
 | **CEST Time** | **What** |
 | --- | --- |
-| 16:00 | Community news: 1. an update from the "wind lidar in cold climate" working group (Nicolas Jolin, Nergica) 2. an update from the "wind lidar in complex terrain" working group (Alexander Stökl, Energiewerkstatt) 3. A possible new round-robin on forward-looking lidar Ti (Jens Riechert, DNV-GL) |
+| 16:00 | Community news: 1. an update from the "wind lidar in cold climate" working group (Nicolas Jolin, Nergica) 2. an update from the "wind lidar in complex terrain" working group (Alexander Stökl, Energiewerkstatt) 3. A possible new round-robin on forward-looking lidar TI (Jens Riechert, DNV-GL) |
 | 16:45 | Close |
 
 

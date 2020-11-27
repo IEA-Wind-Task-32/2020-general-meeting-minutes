@@ -18,6 +18,7 @@
 %% -----------------------------------
 %% Style modifications (doc specific)
 %% -----------------------------------
+% task 32 action box
 \usepackage{tcolorbox}
 \newtcolorbox{taskactions}[1][]
 {
@@ -30,12 +31,22 @@
 	colframe = Task32Blue2,
 	#1,
 }
-
+% no indents
 \setlength{\parindent}{0pt}
-\setcounter{tocdepth}{2}
+% long tables
 \usepackage{supertabular}
+% define figure and section references
 \newcommand{\fref}[1]{Fig.~\ref{#1}}
 \newcommand{\sref}[1]{\S~\ref{#1}}
+% set the TOC depth
+\setcounter{tocdepth}{2}
+% reduce spacing in TOC
+\usepackage[titles]{tocloft}
+\setlength{\cftbeforesecskip}{3pt}
+% authors
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\includegraphics[width=12pt]{graphics/ORCIDiD_icon128x128.png}}}
+\usepackage{fontawesome}
+\newcommand{\mailme}[1]{\href{mailto:#1}{\faicon{envelope-o}}}
 
 %% ===================================
 %:
@@ -48,6 +59,16 @@
 %% -----------------------------------
 \maketitle
 \thispagestyle{cover}
+
+%% -----------------------------------
+%% Authors
+%% -----------------------------------
+\noindent\begin{minipage}{\columnwidth}
+\textcolor{TextLightGrey}{Authors: Andrew Clifton~\orcid{0000-0001-9698-5083}~\mailme{clifton@ifb.uni-stuttgart.de}, %
+Ines Würth~\orcid{},
+David Schlipf~\orcid{}}
+\end{minipage}
+\vskip 6pt
 
 %% -----------------------------------
 %% Introductory text
@@ -81,12 +102,7 @@ The presence of a person’s name or company name in this document should not be
 \input{sections/33-results-day3}
 \input{sections/40-summary}
 \input{sections/participants}
-
-%% -----------------------------------
-%% Acknowledgements
-%% -----------------------------------
-\section*{Acknowledgments}
-The meeting was moderated by Andrew (Andy) Clifton, Task 32 Operating Agent. The working group sessions were facilitated by David Schlipf, Task 32 Operating Agent, many members of the Task 32 Advisory Board, and members of the Task 32 community. The minutes were written by Ines Würth and then converted into this document by Andrew Clifton.
+\input{sections/acknowledgements}
 
 %% -----------------------------------
 %% References
@@ -115,13 +131,16 @@ The meeting was moderated by Andrew (Andy) Clifton, Task 32 Operating Agent. The
 		coltext=TextGrey
 	]
 	{\footnotesize
-		This document was self published by IEA Wind Task 32.
 
 		%% -----------------------------------
 		%% IEA WIND AND TASK 32
 		%% -----------------------------------
 		
 		\begin{tabular}{m{0.3\columnwidth}m{0.6\columnwidth}}
+			\rowcolor{white}
+			\multicolumn{2}{p{0.9\columnwidth}}{%
+			This document was self published by IEA Wind Task 32.
+			}\\
 			% IEA Wind * DO NOT EDIT THIS TEXT *
 			\rowcolor{white}
 			\includegraphics[height=2cm]{graphics/IEAWind_logo.jpg}  &
@@ -130,9 +149,10 @@ The meeting was moderated by Andrew (Andy) Clifton, Task 32 Operating Agent. The
 			% Task 32 * DO NOT EDIT THIS TEXT *
 			\rowcolor{white}
 			\includegraphics[height=1.5cm]{graphics/Task32_logo.jpg} &
-			\href{https://community.ieawind.org/task32/home}{IEA Wind Task 32} exists to identify and mitigate the barriers to the deployment of wind lidar for wind energy applications.
-		\end{tabular}%
-
+			\href{https://community.ieawind.org/task32/home}{IEA Wind Task 32} exists to identify and mitigate the barriers to the deployment of wind lidar for wind energy applications.\\
+			% authors, etc
+			\rowcolor{white}
+			\multicolumn{2}{p{0.9\columnwidth+2\tabcolsep}}{%
 		%% -----------------------------------
 		%% For more information
 		%% -----------------------------------
@@ -143,6 +163,7 @@ The meeting was moderated by Andrew (Andy) Clifton, Task 32 Operating Agent. The
 		%% -----------------------------------
 		\textbf{Author team:} %
 		Andrew Clifton (Task 32 Operating Agent, University of Stuttgart, Germany), %
+		Ines Würth (SWE, University of Stuttgart, Germany), %		
 		David Schlipf (Task 32 operating Agent, Flensburg University of Applied Sciences, Germany).
 		%% -----------------------------------
 		%% Reviewers
@@ -155,6 +176,9 @@ The meeting was moderated by Andrew (Andy) Clifton, Task 32 Operating Agent. The
 		%% -----------------------------------
 		\textbf{Images:}
 		Banner, left to right: \href{https://unsplash.com/@alexkixa}{Alexandre Debiève on Unsplash}, \href{http://ifb.uni-stuttgart.de}{SWE U. Stuttgart}, \href{https://unsplash.com/@markusspiske}{Markus Spiske on Unsplash}.
+	}\\
+	\end{tabular}%
+
 	}
 
 	%% -----------------------------------
